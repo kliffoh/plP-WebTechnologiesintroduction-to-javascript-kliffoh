@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="align-items: center;">Registration and Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="clive">
+    <h1>Registration and Login Form</h1>
+  </div>
+    
+    <div class="container">
+        <h2>Registration</h2><hr>
+        <form id="registrationForm" onsubmit="return validateRegistration()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required min="18" max="100">
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="other">Other</option>
+                </select>
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions</label>
+                <span class="error"></span>
+            </div>
+            <button type="submit" style="color: #FFA500;"><b>Register</b></button>
+        </form>
+        <h2>Login</h2><hr>
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" required>
+                <span class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <span class="error"></span>
+            </div>
+            <button type="submit" style="color: #FFA500;"><b>Login</b></button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

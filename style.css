@@ -1,0 +1,130 @@
+.clive {
+    background-image: linear-gradient(to left, rgb(0, 0, 0), white, rgb(247, 4, 4), rgb(255, 255, 255), rgb(0, 255, 76), white);
+    height: 100px; /* Adjust the height as needed */
+    animation: kenyanFlagAnimation 2s linear infinite;
+}
+
+@keyframes kenyanFlagAnimation {
+    0% {
+        background-position: 100% 0%; /* Start from the right */
+    }
+    25% {
+        background-position: 75% 0%;
+    }
+    50% {
+        background-position: 50% 0%;
+    }
+    75% {
+        background-position: 25% 0%;
+    }
+    100% {
+        background-position: 0% 0%; /* End at the left */
+    }
+}
+head{
+    align-items: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    
+        background-image: url("kenya.jpg");
+        background-size:contain;
+        background-position: center;
+     
+}
+@media (max-width: 768px) {
+    body {
+      background-size: contain;
+    }
+  }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .center-content {
+      margin: 0 auto;
+    }
+  }
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #000000; /* Kenyan flag black */
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Animation for registration button */
+#registrationForm button {
+    animation: kenyan-flag-animation 6s infinite;
+}
+
+@keyframes kenyan-flag-animation {
+    0% {
+        background-color: #fc0000;/* Kenyan flag red */
+    }
+    25% {
+        background-color: #f5f5f5; /* Kenyan flag white */
+    }
+    50% {
+        background-color: #03f703; /* Kenyan flag green */
+    }
+    75% {
+        background-color: #ffffff; /* Kenyan flag white */
+    }
+    100% {
+        background-color: #000000;/* Kenyan flag black*/
+    }
+}
+
+/* Animation for login button */
+#loginForm button {
+    animation: kenyan-flag-animation-reverse 6s infinite;
+}
+
+
+@keyframes kenyan-flag-animation-reverse {
+    0% {
+        background-color: #fc0000;/* Kenyan flag red */
+    }
+    25% {
+        background-color: #f5f5f5; /* Kenyan flag white */
+    }
+    50% {
+        background-color: #03f703; /* Kenyan flag green */
+    }
+    75% {
+        background-color: #ffffff; /* Kenyan flag white */
+    }
+    100% {
+        background-color: #090606;/* Kenyan flag black*/
+    }
+}
